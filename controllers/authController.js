@@ -1,6 +1,7 @@
-import { hashPassword } from '../helpers/authHelpers';
 import userModel from'../models/userModel.js';
-export const registerController =async ()=> {
+import {hashPassword } from '../helpers/authHelpers.js';
+
+export const registerController =async (req,res)=> {
     try {
         const { name, email, password, phone, address, answer } = req.body;
         
@@ -19,9 +20,6 @@ export const registerController =async ()=> {
         };
         if (!address) {
             return res.send({ message: "Address is Required" });
-        };
-        if (!answer) {
-            return res.send({ message: "Answer is Required" });
         };
 
         //check user----------------
