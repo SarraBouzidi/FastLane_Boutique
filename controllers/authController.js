@@ -113,3 +113,12 @@ export const loginController = async (req, res) => {
         });
       }
     };
+// GET test Controllers
+export const testControllers =async(req,res) => {
+    try {
+        res.send("Protected Routes");
+      } catch (error) {
+        console.log(error);
+        res.send({ error });
+      }
+};
