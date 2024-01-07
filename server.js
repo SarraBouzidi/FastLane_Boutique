@@ -1,5 +1,10 @@
-const express=require('express');
-const colors=require('colors');
+import express from "express";
+import colors from "colors";
+import dotenv from "dotenv";
+import morgan from "morgan";
+
+//configure env
+dotenv.config();
 
 //rest object
 const app = express();
@@ -8,8 +13,10 @@ const app = express();
 app.get("/", (req, res) => {
     res.send("<h1>Welcome to ecommerce app</h1>");
   });
+
   //PORT
-const PORT =8080;
+const PORT = process.env.PORT || 8080;
+
 //run listen
 app.listen(PORT, () => {
     console.log(`Server Running on port ${PORT}`.bgCyan.white);
