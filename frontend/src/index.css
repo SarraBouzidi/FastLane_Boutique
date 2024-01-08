@@ -24,11 +24,39 @@ font-family: 'Playfair Display', serif;
   font-weight: 300 !important;
     color: #49DAC2;
 }
+.active {
+  border-bottom: 2px solid #49DAC2;
+}
+
+/* =============================
+==========footer============= */
+
+.footer {
+  color: white;
+  padding: 15px;
+  background: #feddb3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #feddb3,
+    #feca85
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #feddb3, #feca85);
+  
+}
+.footer h1 {
+  font-Size: 22px;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+.footer a:hover {
+  color: #49DAC2;
+  border-bottom: 1px solid #49DAC2;
+}
 .logoStyle {
   flex: 1;
   height: 68px; 
   margin-right: 8px; 
 };
-.active {
-  border-bottom: 2px solid #49DAC2;
-}
