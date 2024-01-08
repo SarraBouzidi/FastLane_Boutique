@@ -9,3 +9,26 @@
 /*font-family: 'Poppins', sans-serif;
 font-family: 'Playfair Display', serif;
 */
+/* /navbar css*/
+.navbar{
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff8ef;
+  font-size: 18px ;
+  line-height: 26 px;
+  text-transform: uppercase;
+  box-shadow:0 8px 6px -6px #414143;
+  --webkit-box-shadow: 0 8px 6px -6px 414143;
+  border-bottom: solid 414143 !important;
+}
+.nav-link {
+  font-weight: 300 !important;
+    color: #49DAC2;
+}
+.logoStyle {
+  flex: 1;
+  height: 68px; 
+  margin-right: 8px; 
+};
+.active {
+  border-bottom: 2px solid #49DAC2;
+}
