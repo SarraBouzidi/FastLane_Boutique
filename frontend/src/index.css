@@ -33,7 +33,7 @@ font-family: 'Playfair Display', serif;
 
 .footer {
   color: white;
-  padding: 15px;
+  padding: 25px;
   background: #feddb3; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -43,17 +43,19 @@ font-family: 'Playfair Display', serif;
   background: linear-gradient(to right, #feddb3, #feca85);
   
 }
-.footer h1 {
-  font-Size: 22px;
-}
+
 .footer a {
   text-decoration: none;
   color: white;
   padding: 10px;
 }
+
 .footer a:hover {
   color: #49DAC2;
   border-bottom: 1px solid #49DAC2;
+}
+.footer h1 {
+  font-Size: 22px;
 }
 /* =================================
 ======== page not found css ======= */
@@ -85,9 +87,21 @@ font-family: 'Playfair Display', serif;
   background-color: #FCB041;
   color: white;
 }
+/* ========================================= */
+/* =========contact us ========= */
+.contactus {
+  margin: 0;
+  padding: 0;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /**logo style navbar*/
 .logoStyle {
   flex: 1;
   height: 68px; 
   margin-right: 8px; 
 };
+
+
