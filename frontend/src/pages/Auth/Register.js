@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Layout from '../../components/Layout/Layout';
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
+import toast from "react-hot-toast";
 const Register = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -22,7 +22,7 @@ const Register = () => {
                 phone,
                 address,
             });
-            if (res.data.success) {
+            if (res && res.data.success) {
                 toast.success(res.data.message);
                 navigate("/login");
             } else {
