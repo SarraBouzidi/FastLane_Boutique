@@ -97,11 +97,21 @@ font-family: 'Playfair Display', serif;
   align-items: center;
   justify-content: center;
 }
+/* ========================================= */
+/* =========register page ========= */
+.register{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  flex-direction: column;
+}
+
+
 /**logo style navbar*/
 .logoStyle {
   flex: 1;
   height: 68px; 
   margin-right: 8px; 
 };
-
 
